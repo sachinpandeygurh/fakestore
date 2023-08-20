@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import ProductList from './components/ProductList';
+import axios from 'axios';
 
+const CartItems = async ()=>{
+  try{
+    const product = await axios.get(`https://fakestoreapi.com/products`)
+    
+    console.log(product.then(res=>res.json()))
+  }catch(error){
+    alert("Error", error)
+  }
+}
+console.log(CartItems.product);
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <ProductList/>
     </div>
   );
 }
