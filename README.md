@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# FakeStore App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to FakeStore, a React Redux app built to showcase the usage of the store API.
+
+## Getting Started
+
+To get started with the FakeStore app, follow these steps:
+
+1. Clone this repository to your local machine using:
+   ```
+   git clone https://github.com/sachinpandeygurh/fakestore.git
+   ```
+
+2. Navigate to the project directory:
+   ```
+   cd fakestore
+   ```
+
+3. Install the dependencies using npm:
+   ```
+   npm install
+   ```
+
+4. Start the development server:
+   ```
+   npm start
+   ```
+
+   This will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) in your browser to view it.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can use the following scripts:
 
-### `npm start`
+- `npm start`: Runs the app in development mode.
+- `npm run build`: Builds the app for production in the `build` folder.
+- `npm run eject`: Ejects the app from Create React App setup (not reversible).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Deployment
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+After building the app using `npm run build`, you can deploy it to a web server or hosting service of your choice. The built app in the `build` folder is ready for deployment.
 
-### `npm test`
+## Project Dependencies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project utilizes the following dependencies:
 
-### `npm run build`
+- `@testing-library/jest-dom`
+- `@testing-library/react`
+- `@testing-library/user-event`
+- `axios`
+- `bootstrap`
+- `react`
+- `react-bootstrap`
+- `react-dom`
+- `react-redux`
+- `react-router-dom`
+- `react-scripts`
+- `semantic-ui-react`
+- `web-vitals`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Make sure you have these dependencies installed by running `npm install`.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## GitHub Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+You can find the FakeStore project on GitHub: [FakeStore GitHub Repository](https://github.com/sachinpandeygurh/fakestore)
