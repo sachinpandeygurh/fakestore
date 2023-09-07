@@ -1,5 +1,7 @@
 import './App.css';
+import ProductCard from './components/ProductCard';
 import ProductList from './components/ProductList';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 
 const CartItems = async ()=>{
@@ -16,6 +18,7 @@ function App() {
   return (
     <div className="App">
      <ProductList/>
+    
     </div>
   );
 }

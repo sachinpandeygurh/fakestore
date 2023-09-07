@@ -7,21 +7,25 @@ Welcome to FakeStore, a React Redux app built to showcase the usage of the store
 To get started with the FakeStore app, follow these steps:
 
 1. Clone this repository to your local machine using:
+
    ```
    git clone https://github.com/sachinpandeygurh/fakestore.git
    ```
 
 2. Navigate to the project directory:
+
    ```
    cd fakestore
    ```
 
 3. Install the dependencies using npm:
+
    ```
    npm install
    ```
 
 4. Start the development server:
+
    ```
    npm start
    ```
@@ -44,9 +48,6 @@ After building the app using `npm run build`, you can deploy it to a web server 
 
 This project utilizes the following dependencies:
 
-- `@testing-library/jest-dom`
-- `@testing-library/react`
-- `@testing-library/user-event`
 - `axios`
 - `bootstrap`
 - `react`
@@ -63,3 +64,9 @@ Make sure you have these dependencies installed by running `npm install`.
 ## GitHub Repository
 
 You can find the FakeStore project on GitHub: [FakeStore GitHub Repository](https://github.com/sachinpandeygurh/fakestore)
+
+## Live Demo
+
+You can visit the FakeStore app online: [FakeStore App](https://fake-store-shopping-app.netlify.app/)
+
+Enjoy exploring the FakeStore app!
