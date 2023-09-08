@@ -1,24 +1,40 @@
-import './App.css';
-import ProductCard from './components/ProductCard';
-import ProductList from './components/ProductList';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import axios from 'axios';
+import './App.css';
+import { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; 
+import Header from './components/Header';
+import ProductList from './components/ProductList';
+import Card from './components/Card';
 
-const CartItems = async ()=>{
-  try{
-    const product = await axios.get(`https://fakestoreapi.com/products`)
-    
-    console.log(product.then(res=>res.json()))
-  }catch(error){
-    alert("Error", error)
-  }
-}
-console.log(CartItems.product);
 function App() {
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [cart, setCart] = useState([]);
+
+  const handleCategoryChange = (category) => {
+    setSelectedCategory(category);
+  };
+
+  const addToCart = (item) => {
+    setCart([...cart, item]);
+  };
+
   return (
     <div className="App">
-     <ProductList/>
-    
+      <Router>
+        <Header onCategoryChange={handleCategoryChange} />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ProductList
+                category={selectedCategory}
+                addToCart={addToCart}
+              />
+            }
+          />
+          <Route path="/cart" element={<Card cart={cart} />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
